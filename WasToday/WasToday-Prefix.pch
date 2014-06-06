@@ -1,0 +1,24 @@
+//
+//  WasToday-Prefix.pch
+//  WasToday
+//
+//  Created by Zeke Shearer on 6/6/14.
+//  Copyright (c) 2014 EZS. All rights reserved.
+//
+
+#ifndef WasToday_WasToday_Prefix_pch
+#define WasToday_WasToday_Prefix_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+
+#import "_WTDDay.h"
+#import "_WTDEvent.h"
+#import "WTDDay.h"
+#import "WTDEvent.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif

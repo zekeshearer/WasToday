@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6172.12" systemVersion="13D65" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Day" representedClassName="WTDDay" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Event" inverseName="day" inverseEntity="Event" syncable="YES"/>
+    </entity>
+    <entity name="Event" representedClassName="WTDEvent" syncable="YES">
+        <attribute name="eventDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="day" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Day" inverseName="events" inverseEntity="Day" syncable="YES"/>
+        <relationship name="parentEvent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="subEvents" inverseEntity="Event" syncable="YES"/>
+        <relationship name="subEvents" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Event" inverseName="parentEvent" inverseEntity="Event" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Day" positionX="-63" positionY="-18" width="128" height="73"/>
+        <element name="Event" positionX="-54" positionY="0" width="128" height="103"/>
+    </elements>
+</model>
