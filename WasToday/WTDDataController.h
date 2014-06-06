@@ -10,4 +10,8 @@
 
 @interface WTDDataController : NSObject
 
++ (WTDDataController *)instance;
+
+- (void)fetchEventsForDate:(NSDate *)date withCompletion:(void(^)(BOOL success))completion;
+
 @end

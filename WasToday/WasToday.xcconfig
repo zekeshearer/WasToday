@@ -1,0 +1,4 @@
+GCC_PREPROCESSOR_DEFINITIONS[sdk=iphoneos*][arch=*] = $(inherited) IPHONEOS=1
+GCC_PREPROCESSOR_DEFINITIONS[sdk=iphonesimulator*][arch=*] = $(inherited) IPHONESIMULATOR=1
+HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)" "$(OBJROOT)/UninstalledProducts"
+OTHER_LDFLAGS = -framework CFNetwork -framework SystemConfiguration -framework QuartzCore -framework CoreData -framework AddressBook -framework MapKit -framework CoreLocation -lz -lSurfShackCocoa -L$(BUILT_PRODUCTS_DIR) -ObjC -all_load

@@ -46,7 +46,35 @@
 		B3E5260B1942836B003FC1E6 /* _WTDEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E526051942836B003FC1E6 /* _WTDEvent.m */; };
 		B3E5260C1942836B003FC1E6 /* WTDDay.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E526071942836B003FC1E6 /* WTDDay.m */; };
 		B3E5260D1942836B003FC1E6 /* WTDEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E526091942836B003FC1E6 /* WTDEvent.m */; };
+		B3E52AEC19428543003FC1E6 /* WasToday.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B3E52AEB19428543003FC1E6 /* WasToday.xcconfig */; };
+		B3E52AEE194285A4003FC1E6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E52AED194285A4003FC1E6 /* MobileCoreServices.framework */; };
+		B3E52AF0194285AD003FC1E6 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E52AEF194285AD003FC1E6 /* ImageIO.framework */; };
+		B3E52AF2194285B5003FC1E6 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E52AF1194285B5003FC1E6 /* CoreText.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3E52AE319428515003FC1E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3E52AE019428505003FC1E6 /* SurfShackCocoa.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B9E3CBE21422675400197036;
+			remoteInfo = SurfShackCocoa;
+		};
+		B3E52AE719428515003FC1E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3E52AE019428505003FC1E6 /* SurfShackCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B9E3CBE31422675400197036;
+			remoteInfo = SurfShackCocoa;
+		};
+		B3E52AE919428515003FC1E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3E52AE019428505003FC1E6 /* SurfShackCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B9E3CBF31422675400197036;
+			remoteInfo = SurfShackCocoaTests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B35A9DE2194272240014EE6C /* WasToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WasToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +123,11 @@
 		B3E526071942836B003FC1E6 /* WTDDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTDDay.m; sourceTree = "<group>"; };
 		B3E526081942836B003FC1E6 /* WTDEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTDEvent.h; sourceTree = "<group>"; };
 		B3E526091942836B003FC1E6 /* WTDEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTDEvent.m; sourceTree = "<group>"; };
+		B3E52AE019428505003FC1E6 /* SurfShackCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SurfShackCocoa.xcodeproj; path = ../SurfShackCocoa/_iPhoneProject/SurfShackCocoa.xcodeproj; sourceTree = "<group>"; };
+		B3E52AEB19428543003FC1E6 /* WasToday.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = WasToday.xcconfig; sourceTree = "<group>"; };
+		B3E52AED194285A4003FC1E6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B3E52AEF194285AD003FC1E6 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		B3E52AF1194285B5003FC1E6 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +135,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3E52AF2194285B5003FC1E6 /* CoreText.framework in Frameworks */,
+				B3E52AF0194285AD003FC1E6 /* ImageIO.framework in Frameworks */,
+				B3E52AEE194285A4003FC1E6 /* MobileCoreServices.framework in Frameworks */,
 				B35A9E3A194275E30014EE6C /* Foundation.framework in Frameworks */,
 				B35A9E38194275D80014EE6C /* UIKit.framework in Frameworks */,
 				B35A9E36194275C80014EE6C /* CoreGraphics.framework in Frameworks */,
@@ -115,6 +151,7 @@
 		B35A9DD9194272240014EE6C = {
 			isa = PBXGroup;
 			children = (
+				B3E52AE019428505003FC1E6 /* SurfShackCocoa.xcodeproj */,
 				B35A9DE4194272240014EE6C /* WasToday */,
 				B35A9DE3194272240014EE6C /* Products */,
 			);
@@ -148,6 +185,7 @@
 				B35A9DE6194272240014EE6C /* Info.plist */,
 				B35A9DE7194272240014EE6C /* main.m */,
 				B35A9E3B194276410014EE6C /* WasToday-Prefix.pch */,
+				B3E52AEB19428543003FC1E6 /* WasToday.xcconfig */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -202,6 +240,9 @@
 		B3E525F4194277E4003FC1E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3E52AF1194285B5003FC1E6 /* CoreText.framework */,
+				B3E52AEF194285AD003FC1E6 /* ImageIO.framework */,
+				B3E52AED194285A4003FC1E6 /* MobileCoreServices.framework */,
 				B35A9E39194275E30014EE6C /* Foundation.framework */,
 				B35A9E37194275D80014EE6C /* UIKit.framework */,
 				B35A9E35194275C80014EE6C /* CoreGraphics.framework */,
@@ -244,6 +285,15 @@
 			path = Primitives;
 			sourceTree = "<group>";
 		};
+		B3E52AE119428505003FC1E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3E52AE819428515003FC1E6 /* libSurfShackCocoa.a */,
+				B3E52AEA19428515003FC1E6 /* SurfShackCocoaTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -258,6 +308,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B3E52AE419428515003FC1E6 /* PBXTargetDependency */,
 			);
 			name = WasToday;
 			productName = WasToday;
@@ -287,10 +338,17 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				English,
 			);
 			mainGroup = B35A9DD9194272240014EE6C;
 			productRefGroup = B35A9DE3194272240014EE6C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B3E52AE119428505003FC1E6 /* Products */;
+					ProjectRef = B3E52AE019428505003FC1E6 /* SurfShackCocoa.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B35A9DE1194272240014EE6C /* WasToday */,
@@ -299,6 +357,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		B3E52AE819428515003FC1E6 /* libSurfShackCocoa.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSurfShackCocoa.a;
+			remoteRef = B3E52AE719428515003FC1E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B3E52AEA19428515003FC1E6 /* SurfShackCocoaTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SurfShackCocoaTests.octest;
+			remoteRef = B3E52AE919428515003FC1E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		B35A9DE0194272240014EE6C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -306,6 +381,7 @@
 			files = (
 				B35A9DED194272240014EE6C /* Images.xcassets in Resources */,
 				B35A9E09194273890014EE6C /* WTDHomeViewController.xib in Resources */,
+				B3E52AEC19428543003FC1E6 /* WasToday.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +431,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3E52AE419428515003FC1E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SurfShackCocoa;
+			targetProxy = B3E52AE319428515003FC1E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B35A9DFA194272240014EE6C /* Debug */ = {
@@ -437,6 +521,7 @@
 		};
 		B35A9DFD194272240014EE6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3E52AEB19428543003FC1E6 /* WasToday.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -444,12 +529,18 @@
 				INFOPLIST_FILE = WasToday/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/zeke/Projects/SurfShackCocoa/ThirdParty/libssh2-1.2/lib",
+					"/Users/zeke/Projects/SurfShackCocoa/ThirdParty/openssl-0.9.8k/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		B35A9DFE194272240014EE6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3E52AEB19428543003FC1E6 /* WasToday.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -457,6 +548,11 @@
 				INFOPLIST_FILE = WasToday/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/zeke/Projects/SurfShackCocoa/ThirdParty/libssh2-1.2/lib",
+					"/Users/zeke/Projects/SurfShackCocoa/ThirdParty/openssl-0.9.8k/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
