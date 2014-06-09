@@ -50,6 +50,18 @@ static WTDDataController *_instance = nil;
     operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSManagedObjectContext *moc;
+        NSDictionary *responseDictionary;
+        NSString *bodyText;
+        NSString *title;
+        NSArray *revisions;
+        
+        responseDictionary = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
+        responseDictionary = [responseDictionary nonNullValueForKey:@"query"];
+        responseDictionary = [responseDictionary nonNullValueForKey:@"pages"];
+        responseDictionary = responseDictionary.allValues.firstObject;
+        title = [responseDictionary nonNullValueForKey:@"title"];
+        revisions = [responseDictionary nonNullValueForKey:@"revisions"];
+        bodyText = [[revisions lastObject] nonNullValueForKey:@"*"];
         
         moc = [[WTDModelController instance] writeMOC];
         
@@ -61,6 +73,7 @@ static WTDDataController *_instance = nil;
         NSLog(@"Error: %@", error);
         completion(NO);
     }];
+    [self.operationQueue addOperation:operation];
 }
 
 - (NSString *)dayStringForDate:(NSDate *)date

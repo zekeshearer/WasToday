@@ -599,6 +599,7 @@
 				B3E525F9194280A9003FC1E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

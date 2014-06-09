@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "WTDDataController.h"
 
 @interface AppDelegate ()
             
@@ -21,6 +22,13 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    
+    [[WTDDataController instance] fetchEventsForDate:[NSDate date] withCompletion:^(BOOL success) {
+        NSLog(@"");
+    }];
+    
+    
     return YES;
 }
 
